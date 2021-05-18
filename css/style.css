@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navigation {
+    font-family: var(--font);
+    height: 74px;
+    /*background-color: red;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left {
+    font-size: 30px;
+    display: flex;
+}
+
+.nav-left ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    font-size: 21px;
+    margin: 0 77px;
+}
+
+.nav-left ul li {
+    list-style: none;
+    margin: 0 14px;
+    font-family: var(--font);
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-left ul li a:hover {
+    font-weight: bolder;
+    color: var(--main-bg-color);
+}
+
+.nav-left ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.content {
+    display: flex;
+    height: 395px;
+    /* background-color: rgb(196, 226, 209); */
+    margin-top: 32px;
+    padding: 9px;
+    position: relative;
+}
+
+.content::after {
+    content: "";
+    background: url('https://placeimg.com/1000/800/tech');
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    opacity: 0.15;
+}
+
+.content-left {
+    font-family: var(--font);
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+}
+
+.content-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-right img {
+    height: 355px;
+    border-radius: 200px;
+    border: 2px solid black;
+}
+
+.homearticle {
+    display: flex;
+    margin: 25px;
+}
+
+.home-article-img {
+    width: 300px
+}
+
+.home-article-content {
+    align-self: center;
+    padding: 0px 25px;
+}
+
+.home-article-content a {
+    text-decoration: none;
+    color: black
+}
+
+.homearticles {
+    background-color: rgb(229, 216, 241, 0.3);
+    padding-top: 12px;
+}
+
+.footer {
+    height: 50px;
+    background-color: rgb(233, 140, 140);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+}
+
+.footer a {
+    color: black;
+}
